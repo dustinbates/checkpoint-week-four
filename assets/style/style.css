@@ -1,0 +1,10 @@
+/* BASIC STYLES HERE */
+body{
+    background-size: cover;
+    background-position: center;
+}
+
+.checkbox{
+    height: 32px;
+    width: 32px;
+}
