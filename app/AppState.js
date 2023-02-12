@@ -11,8 +11,13 @@ class AppState extends EventEmitter {
   // @ts-ignore
   images = null
 
+ /** @type {import('./Models/Quote').Quote} */
+  // @ts-ignore
+  quotes = null
+
   /** @type {import('./Models/Todo').Todo[]} */
   todos = []
+
 }
 
 export const appState = new Proxy(new AppState(), {
