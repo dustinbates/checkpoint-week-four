@@ -26,15 +26,22 @@
         </p>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            <h5 class="text-center text-light"><span id="todoCount"> </span> Left</h5>
-            <form class="d-flex justify-content-between sticky-top" onsubmit="app.todosController.createTodo()">
-              <input required type="text" class="form-control" id="description" placeholder="Todo" name="description">
-              <button class="btn btn-success"><i class="mdi mdi-plus"></i></button>
-            </form>
+            <div class="d-flex justify-content-around text-light">
+              <h5>Todo</h5>
+              <h5 class="text-center text-light"><span id="todoCount"> </span> Left</h5>
+            </div>
             <div class="row">
               <div class="col-12" id="todoList"></div>
               
             </div>
+            <form class="d-flex justify-content-between sticky-bottom" onsubmit="app.todosController.createTodo()">
+              <input required type="text" class="form-control" id="description" placeholder="Todo" name="description">
+              <button class="btn btn-info"><i class="mdi mdi-plus"></i></button>
+            </form>
+            <!-- <div class="row">
+              <div class="col-12" id="todoList"></div>
+              
+            </div> -->
           </div>
         </div>
       </div>

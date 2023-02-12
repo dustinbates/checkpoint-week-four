@@ -5,6 +5,7 @@ export class Weather {
         this.tempC = Math.floor(data.main.temp) - 273
         this.tempF = Math.floor(this.tempC * 9/5) + 32
         this.isF = true
+        this.clouds = data.clouds.all
     }
 
     get WeatherTemplate(){
