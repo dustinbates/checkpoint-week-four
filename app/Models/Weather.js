@@ -11,10 +11,10 @@ export class Weather {
     get WeatherTemplate(){
         const temp = this.isF ? this.tempF : this.tempC
         return /*html*/ `
-        <div class="d-block mx-2 my-3 " onclick="app.weatherController.changeTemp()">
+        <div class="weather mx-2 my-3 " onclick="app.weatherController.changeTemp()">
             <span class="d-flex flex-row">
                 <h2 id="temp">${temp}</h2>
-                <p id="temp-type"></p>
+                <p class="mt-1" id="temp-type"></p>
             </span>
             <h5 class="">${this.name}</h5>
         </div>

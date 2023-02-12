@@ -36,3 +36,14 @@ body{
     z-index: -1;
 
 }
+
+.todoButton{
+    box-shadow: 1px 1px 1px rgba(0, 0, 139, 0.324);
+    text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.324);
+}
+
+.weather{
+    text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.324);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
