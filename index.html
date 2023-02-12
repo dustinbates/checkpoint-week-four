@@ -17,35 +17,39 @@
 
 <body>
   <header>
-    
-  </header>
-
-  <main class="container-fluid">
-    <div class="row justify-content-end">
+    <div class="row justify-content-end m-3">
       <div class="col-4 position-absolute">
         <p class="text-end mt-2">
-          <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
             <i class="mdi mdi-plus "></i>
           </a>
         </p>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            <form class="d-flex justify-content-end" onsubmit="app.todosController.createTodo()">
+            <h5 class="text-center text-light"><span id="todoCount"> </span> Left</h5>
+            <form class="d-flex justify-content-between sticky-top" onsubmit="app.todosController.createTodo()">
               <input required type="text" class="form-control" id="description" placeholder="Todo" name="description">
               <button class="btn btn-success"><i class="mdi mdi-plus"></i></button>
             </form>
             <div class="row">
               <div class="col-12" id="todoList"></div>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="col-2 text-light" id="weather">
+      
+    </div>
+    
 
     <div class="row">
-        <p id="clock" class="clock"></p>
+      <p id="clock" class="clock"></p>
 
-      </div>
     </div>
     
   </main>
@@ -58,7 +62,6 @@
     </div>
   </footer>
 
-<!-- SECTION collapse content -->
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>

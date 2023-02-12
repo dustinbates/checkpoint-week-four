@@ -3,7 +3,7 @@ export class Todo{
         this.completed = data.completed
         this.description = data.description
         this.id = data.id 
-        this.completed = data.completed
+        this.completed = data.completed || false
     }
 
 

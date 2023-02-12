@@ -11,17 +11,28 @@ body{
 
 .card{
     background-color: rgba(0, 0, 139, 0.197);
+    text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.324);
+    font-family: fantasy;
+    z-index: 1;
+    max-height: 410px;
+    overflow-y:scroll;
 }
 
+.quote{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.324);
+    font-family: fantasy;
+}
 
 .clock{
     color: whitesmoke;
     font-size: 10vh;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.324);
     position: absolute;
     top: 40%;
     left: 34%;
     margin-top: -50px;
     margin-bottom: -50px;
+    z-index: -1;
 
 }
