@@ -15,7 +15,12 @@ body{
     font-family: fantasy;
     z-index: 1;
     max-height: 410px;
-    overflow-y:scroll;
+    width: 396px;
+    left: 18%;
+}
+
+.todoList{
+    overflow-y: scroll;
 }
 
 .quote{
@@ -45,5 +50,12 @@ body{
 .weather{
     text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.324);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 7vw;
+    padding: .5em;
 
+}
+
+.list{
+    text-align: start !important;
+    justify-content: start !important;
 }
